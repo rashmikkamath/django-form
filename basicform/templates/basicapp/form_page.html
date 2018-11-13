@@ -8,7 +8,10 @@
 	<h1>Fill this form</h1>
 	<div class="container">
 		<form class="" method="POST">
+			{%csrf_token%}
+
 			{{form.as_p}}
+			<input type="submit" class="btn btn-primary">
 		</form>
 	</div>
 	
